@@ -28,6 +28,10 @@ Use local Dockerfile to build image. Defaults to `latest` tag.
 
     $ sudo docker build -t bdlss/loris-openjpeg-docker .
 
+### Images
+
+Images are here `/usr/local/share/images/`.
+
 ### Start the container and test
 
     $ docker run -d -p 5004:5004 bdlss/loris-openjpeg-docker
