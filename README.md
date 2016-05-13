@@ -30,7 +30,7 @@ Use local Dockerfile to build image. Defaults to `latest` tag.
 
 ### Images
 
-Images are here `/usr/local/share/images/`.
+Images are within the container at `/usr/local/share/images/`.
 
 ### Start the container and test
 
