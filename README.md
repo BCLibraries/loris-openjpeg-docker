@@ -1,4 +1,4 @@
-Docker build of Loris 2.0.1 IIIF Image Server with OPENJPEG 2.1
+Docker build of Loris 2.0.1 IIIF Image Server with OPENJPEG 2.1 on Ubuntu 14.04
 ===========
 
 
