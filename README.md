@@ -39,8 +39,8 @@ After starting the container, you can IIIF validate your images from the contain
 To get to the container command line use:
 
 ```bash
-docker ps
-docker exec -it <container ID> /bin/bash
+sudo docker ps
+sudo docker exec -it <container ID> /bin/bash
 ```
 
 Then for an image served at `http://localhost:5004/prefix/image_id` the validator can be run with:
