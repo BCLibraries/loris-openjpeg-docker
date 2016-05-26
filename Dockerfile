@@ -82,7 +82,15 @@ WORKDIR /tmp
 RUN wget --no-check-certificate https://pypi.python.org/packages/source/i/iiif-validator/iiif-validator-1.0.0.tar.gz \
 	&& tar zxfv iiif-validator-1.0.0.tar.gz \
 	&& rm iiif-validator-1.0.0.tar.gz
-	
+
+# install python
+RUN apt-get install -y python2.7 build-essential python-dev python-setuptools libxml2-dev libxslt1-dev
+
+# get python frameworks for iiif validator
+RUN pip2.7 install bottle \
+    && pip2.7 install python-magic \
+    && pip2.7 install lxml 
+    
 # run
 WORKDIR /opt/loris/loris
 
