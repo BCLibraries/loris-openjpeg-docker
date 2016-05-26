@@ -17,7 +17,7 @@ Please also refer to https://github.com/loris-imageserver/loris/issues/61
 ### Use  pre-built image
 Download image from docker hub. Defaults to `latest` tag. Docker will normally run as root unless otherwise configured.
 
-    $ docker pull bdlss/loris-openjpeg-docker
+    $ sudo docker pull bdlss/loris-openjpeg-docker
 
 To run the docker command without sudo, you need to add your user (who must have root privileges) to the docker group. To do this run following command:
 
