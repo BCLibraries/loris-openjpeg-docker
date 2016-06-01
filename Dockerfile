@@ -15,7 +15,9 @@ RUN git checkout tags/version.2.1
 RUN cmake . && make && make install
 
 # Install pip and python libs
-RUN apt-get install -y python-dev python-setuptools python-pip
+#RUN apt-get install -y python-dev python-setuptools python-pip
+# install python
+RUN apt-get install -y python2.7 build-essential python-dev python-setuptools python-pip libxml2-dev libxslt1-dev
 RUN pip install --upgrade pip		
 RUN pip2.7 install Werkzeug
 RUN pip2.7 install configobj
@@ -84,7 +86,7 @@ RUN wget --no-check-certificate https://pypi.python.org/packages/source/i/iiif-v
 	&& rm iiif-validator-1.0.0.tar.gz
 
 # install python
-RUN apt-get install -y python2.7 build-essential python-dev python-setuptools libxml2-dev libxslt1-dev
+#RUN apt-get install -y python2.7 build-essential python-dev python-setuptools libxml2-dev libxslt1-dev
 
 # get python frameworks for iiif validator
 RUN pip2.7 install bottle \
