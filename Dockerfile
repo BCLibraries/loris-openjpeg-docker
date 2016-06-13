@@ -51,7 +51,7 @@ RUN ln -s /usr/lib/`uname -i`-linux-gnu/libfreetype.so /usr/lib/ \
 
 RUN echo "/usr/local/lib" >> /etc/ld.so.conf && ldconfig
 
-# Install Pillow
+# Install graphics libs and Pillow
 RUN apt-get install -y libjpeg8 libjpeg8-dev libfreetype6 libfreetype6-dev zlib1g-dev liblcms2-2 liblcms2-dev liblcms2-utils libtiff5-dev
 RUN pip2.7 install Pillow
 
