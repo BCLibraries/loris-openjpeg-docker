@@ -1,5 +1,5 @@
 Docker build of Loris 2.0.1 IIIF Image Server with OPENJPEG 2.1 on Ubuntu 14.04
-===========
+============
 
 
 A Dockfile deployment of Loris image server with OPENJPEG @ https://github.com/uclouvain/openjpeg and https://github.com/loris-imageserver/loris
